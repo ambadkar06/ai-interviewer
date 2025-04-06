@@ -56,7 +56,8 @@ const [jobDescErrorMsg, setJobDescErrorMsg] = useState("");
   
     try {
       setIsLoading(true);
-      const res = await fetch("http://localhost:8000/analyze", {
+      const res = await fetch("https://ai-interviewer-backend-ja4t.onrender.com/analyze", {
+
         method: "POST",
         body: formData,
       });
