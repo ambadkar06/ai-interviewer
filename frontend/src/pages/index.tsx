@@ -56,7 +56,7 @@ const [jobDescErrorMsg, setJobDescErrorMsg] = useState("");
   
     try {
       setIsLoading(true);
-      const res = await fetch("http://127.0.0.1:8000/analyze", {
+      const res = await fetch("http://localhost:8000/analyze", {
         method: "POST",
         body: formData,
       });
@@ -143,7 +143,7 @@ const [jobDescErrorMsg, setJobDescErrorMsg] = useState("");
       : "Next Question →"}
   </button>
 ) : (
-  <p className="text-green-400 font-semibold">🎉 End of questions!</p>
+  <p className="text-green-400 font-semibold">End of questions!</p>
 )}
   </div>
 )}
